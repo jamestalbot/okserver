@@ -1,0 +1,7 @@
+services:
+  nginx:
+    build: .
+    container_name: okserver
+    restart: unless-stopped
+    ports:
+      - 80:80
